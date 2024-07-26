@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: service-discovery
+  cloud:
+    config:
+      enabled: false
+
+server:
+  port: 8761
+
+
+# Standalone Eureka Server
+eureka:
+  instance:
+    hostname: my-registry
+  client:
+    register-with-eureka: false
+    fetch-registry: false
